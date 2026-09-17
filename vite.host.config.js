@@ -9,7 +9,7 @@ export default defineConfig({
       userscript: {
         name: 'AnySite',
         namespace: 'https://github.com/Xichun123/magix-extension',
-        version: '1.0.2',
+        version: '1.0.3',
         description: 'Modify any website. AI-powered website customization in your browser.',
         author: 'xichun',
         match: ['*://*/*'],

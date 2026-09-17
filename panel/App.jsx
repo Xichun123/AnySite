@@ -33,7 +33,6 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import CloseIcon from '@mui/icons-material/Close';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
@@ -888,126 +887,6 @@ function App() {
                />
              </Box>
 
-             {/* Community Section */}
-             <Box sx={{ pt: 3, borderTop: '1px solid', borderColor: 'grey.100' }}>
-               <Typography variant="subtitle2" sx={{ 
-                 mb: 2, 
-                 fontSize: '0.75rem', 
-                 fontWeight: 500, 
-                 color: 'grey.500',
-                 textTransform: 'uppercase',
-                 letterSpacing: '0.5px'
-               }}>
-                 Community
-               </Typography>
-               <Box sx={{ 
-                 bgcolor: 'grey.50', 
-                 borderRadius: 3, 
-                 p: 2.5, 
-                 border: '1px solid', 
-                 borderColor: 'grey.200',
-                 display: 'flex',
-                 alignItems: 'center',
-                 gap: 2
-               }}>
-                 <GitHubIcon sx={{ color: 'grey.800', fontSize: '2rem' }} />
-                 <Box sx={{ flexGrow: 1 }}>
-                   <Typography variant="body2" sx={{ 
-                     fontSize: '0.85rem', 
-                     fontWeight: 600, 
-                     color: 'grey.800',
-                     mb: 0.5
-                   }}>
-                     AnySite on GitHub
-                   </Typography>
-                   <Typography variant="caption" sx={{ 
-                     fontSize: '0.75rem', 
-                     color: 'grey.600',
-                     display: 'block'
-                   }}>
-                     View the source, report issues, and follow development
-                   </Typography>
-                 </Box>
-                 <Button
-                   variant="outlined"
-                   size="small"
-                   onClick={() => window.open('https://github.com/Xichun123/magix-extension', '_blank')}
-                   sx={{
-                     textTransform: 'none',
-                     borderRadius: 2,
-                     borderColor: 'grey.300',
-                     color: 'grey.700',
-                     fontSize: '0.75rem',
-                     fontWeight: 500,
-                     px: 2,
-                     '&:hover': {
-                       borderColor: 'grey.400',
-                       bgcolor: 'grey.100'
-                     }
-                   }}
-                 >
-                   Open
-                 </Button>
-               </Box>
-             </Box>
-
-             {/* Footer Links */}
-             <Box sx={{ pt: 3, borderTop: '1px solid', borderColor: 'grey.100' }}>
-               <Typography variant="subtitle2" sx={{ 
-                 mb: 2, 
-                 fontSize: '0.75rem', 
-                 fontWeight: 500, 
-                 color: 'grey.500',
-                 textTransform: 'uppercase',
-                 letterSpacing: '0.5px'
-               }}>
-                 Project Links
-               </Typography>
-               <Box sx={{ display: 'flex', gap: 3, flexWrap: 'wrap' }}>
-                 <Link 
-                   href="https://github.com/Xichun123/magix-extension/blob/main/LICENSE"
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   underline="hover" 
-                   sx={{ 
-                     fontSize: '0.8rem',
-                     color: 'grey.600',
-                     fontWeight: 400,
-                     '&:hover': { color: 'text.primary' }
-                   }}
-                 >
-                   License
-                 </Link>
-                 <Link 
-                   href="https://github.com/Xichun123/magix-extension/issues"
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   underline="hover" 
-                   sx={{ 
-                     fontSize: '0.8rem',
-                     color: 'grey.600',
-                     fontWeight: 400,
-                     '&:hover': { color: 'text.primary' }
-                   }}
-                 >
-                   Issues
-                 </Link>
-                 <Link 
-                   href="https://github.com/Xichun123/magix-extension"
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   underline="hover" 
-                   sx={{ 
-                     fontSize: '0.8rem',
-                     color: 'grey.600',
-                     fontWeight: 400,
-                     '&:hover': { color: 'text.primary' }
-                   }}
-                 >
-                   Repository
-                 </Link>
-               </Box>
-         </Box>
         </Box>
        </TabPanel>
 

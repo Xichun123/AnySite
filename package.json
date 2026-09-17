@@ -1,6 +1,6 @@
 {
   "name": "anysite-userscript",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AnySite - AI-powered website customization as a Tampermonkey userscript.",
   "main": "host/host.js",
   "type": "module",
