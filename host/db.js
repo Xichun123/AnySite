@@ -62,7 +62,7 @@ export function hostnameMatches(domain, hostname) {
   return h === d || h.endsWith('.' + d);
 }
 
-// 与原 background.js 一致的宽匹配域名生成（用于存储 domain_pattern）
+// 生成用于存储 domain_pattern 的宽匹配域名
 export function broadDomain(url) {
   try {
     const urlObj = new URL(url);

@@ -30,10 +30,10 @@ npm run build
 
 The build runs in two stages:
 
-1. `npm run build:panel` bundles the React panel into `dist/panel.iife.js`.
-2. `npm run build:host` embeds the panel into `dist/anysite.user.js`.
+1. `npm run build:panel` bundles the React panel into the temporary `.build/` directory.
+2. `npm run build:host` embeds the panel and produces `dist/anysite.user.js`.
 
-Build order matters because the host bundle imports the generated panel bundle. Use `npm run build` for a clean build.
+Build order matters because the host bundle imports the generated panel bundle. Use `npm run build` for a clean build. The only installable file in `dist/` is `anysite.user.js`.
 
 ## Install
 
@@ -63,8 +63,7 @@ host/                  Tampermonkey host runtime
   panel.js             Isolated iframe panel manager
   fab.js               Floating AnySite button
   elementSelector.js   Page element selection
-panel/                 Isolated panel bootstrap and host shims
-sidepanel/             React interface and AI provider integrations
+panel/                 React interface, AI integrations, and host API shim
 shared/                Shared code utilities
 test/                  Bridge and local data end-to-end tests
 vite.panel.config.js   Panel build configuration
@@ -94,7 +93,7 @@ API requests are sent directly from the userscript to the configured provider th
 - OpenRouter
 - Replicate
 
-Available models are configured in `sidepanel/aiService.js`.
+Available models are configured in `panel/aiService.js`.
 
 ## Limitations
 

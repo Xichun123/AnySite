@@ -1,4 +1,4 @@
-// host/elementSelector.js - 页面元素选择模式（自 content.js 移植）
+// host/elementSelector.js - 页面元素选择模式
 
 let selectingModeActive = false;
 let currentHoverElement = null;

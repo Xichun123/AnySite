@@ -1,6 +1,5 @@
-// panel/chromeShim.js
-// 在面板 iframe 内运行（无 GM API）。将现有 chrome.* 调用与 fetch 桥接到宿主脚本。
-// 设计目标：App.jsx / aiService.js 中的调用代码无需改动。
+// panel/apiShim.js
+// 在面板 iframe 内运行（无 GM API），将兼容 API 与 fetch 桥接到宿主脚本。
 
 let msgSeq = 0;
 const pending = new Map();

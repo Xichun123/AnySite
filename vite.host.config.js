@@ -34,7 +34,7 @@ export default defineConfig({
   ],
   build: {
     outDir: 'dist',
-    emptyOutDir: false, // 保留第一阶段的 panel.iife.js
+    emptyOutDir: true,
     sourcemap: false,
   },
 });

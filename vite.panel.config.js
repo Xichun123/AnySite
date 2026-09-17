@@ -9,7 +9,7 @@ export default defineConfig({
     'process.env.NODE_ENV': JSON.stringify('production'),
   },
   build: {
-    outDir: 'dist',
+    outDir: '.build',
     emptyOutDir: true,
     sourcemap: false,
     cssCodeSplit: false, // CSS 内联进 JS，运行时注入 style 标签

@@ -1,4 +1,4 @@
-// 端到端模拟测试：宿主桥服务端（bridgeServer + db）↔ panel shim 客户端（chromeShim）
+// 端到端模拟测试：宿主桥服务端（bridgeServer + db）↔ panel API shim 客户端
 // 在 node 沙箱中模拟两个 window，通过 postMessage 总线连通，验证整条桥工作正常。
 // 运行：node test/e2e-bridge.mjs
 
@@ -25,7 +25,7 @@ const bridgeSrc = dropImports(
   stripExports(fs.readFileSync(path.join(ROOT, 'host/bridgeServer.js'), 'utf8'))
 );
 const shimSrc = dropImports(
-  stripExports(fs.readFileSync(path.join(ROOT, 'panel/chromeShim.js'), 'utf8'))
+  stripExports(fs.readFileSync(path.join(ROOT, 'panel/apiShim.js'), 'utf8'))
 );
 
 // ---------- 共享 GM 存储 + 记录的 AI 假响应 ----------

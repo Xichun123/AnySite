@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import * as localDb from '../panel/localDb';
+import * as localDb from './localDb';
 import { detectCodeType, stripCodeFence } from '../shared/code';
 import { analyzePrompt, generateScript, getAIConfig, saveAIConfig, AI_PROVIDERS, PROVIDER_MODELS } from './aiService'; // Import local AI service
 import Box from '@mui/material/Box';
@@ -269,7 +269,7 @@ function App() {
       if (message.type === 'ELEMENT_SELECTED') {
         setSelectedElementPath(message.selector || '');
         setIsSelectingElement(false);
-        sendResponse({ status: "Selector received by sidepanel" });
+        sendResponse({ status: "Selector received by panel" });
         return true;
       }
       return false;

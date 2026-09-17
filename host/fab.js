@@ -1,4 +1,4 @@
-// host/fab.js - 悬浮按钮（自 content.js 移植，点击切换面板）
+// host/fab.js - 悬浮按钮，点击切换面板
 
 const FAB_STYLE = `
   position: fixed !important;

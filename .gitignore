@@ -6,6 +6,7 @@ project-details/
 
 # Build output
 dist/
+.build/
 
 # Logs
 logs

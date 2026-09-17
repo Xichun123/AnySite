@@ -1,4 +1,4 @@
-// 数据层端到端测试：panel/localDb → chromeShim → 桥 → 宿主 GM 存储
+// 数据层端到端测试：panel/localDb → API shim → 桥 → 宿主 GM 存储
 // 复用 e2e-bridge 的双 window 总线，验证 App.jsx 实际调用的 localDb API 全链路工作。
 // 运行：node test/e2e-localdb.mjs
 
@@ -24,7 +24,7 @@ const bridgeSrc = dropImports(
   stripExports(fs.readFileSync(path.join(ROOT, 'host/bridgeServer.js'), 'utf8'))
 );
 const shimSrc = dropImports(
-  stripExports(fs.readFileSync(path.join(ROOT, 'panel/chromeShim.js'), 'utf8'))
+  stripExports(fs.readFileSync(path.join(ROOT, 'panel/apiShim.js'), 'utf8'))
 );
 const localDbSrc = dropImports(
   stripExports(fs.readFileSync(path.join(ROOT, 'panel/localDb.js'), 'utf8'))

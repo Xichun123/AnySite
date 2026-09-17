@@ -1,7 +1,7 @@
 // host/panel.js - blob URL iframe 面板（渲染 React，隔离页面 CSP）
 
 // 编译后的 panel bundle 源码（由 vite.panel.config.js 先行构建）
-import PANEL_CODE from '../dist/panel.iife.js?raw';
+import PANEL_CODE from '../.build/panel.iife.js?raw';
 
 const PANEL_WIDTH = 400;
 let mount = null;
