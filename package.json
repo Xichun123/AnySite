@@ -1,0 +1,46 @@
+{
+  "name": "anysite-userscript",
+  "version": "1.0.2",
+  "description": "AnySite - AI-powered website customization as a Tampermonkey userscript.",
+  "main": "host/host.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build:panel -- --watch",
+    "build:panel": "vite build --config vite.panel.config.js",
+    "build:host": "vite build --config vite.host.config.js",
+    "build": "npm run build:panel && npm run build:host",
+    "test": "node test/e2e-bridge.mjs && node test/e2e-localdb.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xichun123/magix-extension.git"
+  },
+  "keywords": [
+    "userscript",
+    "tampermonkey",
+    "ai",
+    "web-modification",
+    "gemini",
+    "claude",
+    "openai"
+  ],
+  "author": "xichun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xichun123/magix-extension/issues"
+  },
+  "homepage": "https://github.com/Xichun123/magix-extension#readme",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^6.3.3",
+    "vite-plugin-monkey": "^5.0.2"
+  }
+}
